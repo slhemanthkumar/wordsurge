@@ -1,0 +1,24 @@
+WordSurge v1.5.0 (versionCode 1) — build verification, 2026-09-20 07:22 UTC
+
+Package     : ai.arena.wordsurge   (new package; first upload to Google Play)
+Toolchain   : Temurin JDK 17.0.20.1, Android Gradle Plugin 8.10.0, Gradle 8.11.1,
+              compileSdk 36, build-tools 36.0.0, R8 full mode, bundletool 1.18.3
+Command     : tools/build-release.sh  (gradlew clean lintRelease bundleRelease)
+
+Lint (release)      : No issues found.
+AAB jarsigner       : jar verified.
+AAB bundletool      : validate OK; universal APK builds and verifies
+Universal APK       : built from the AAB with bundletool, apksigner verifies (v2 + v3)
+Badging             : ai.arena.wordsurge versionCode=1 versionName=1.5.0 targetSdk=36 minSdk=26 label=WordSurge
+Permissions         : none (no INTERNET, no AD_ID)
+Third-party SDKs    : none
+Old brand strings   : 0 occurrences of "LetterRide" or "Golden Shore" inside the bundle
+Download size       : 252700 bytes on a Pixel-class device (bundletool get-size)
+AAB file size       : 262988 bytes
+
+Web smoke test      : tools/smoke-test.js — 25/25 checks passed (headless Chromium, mobile profile)
+Level validation    : tools/validate-levels.mjs — 5,000 levels + 400 daily puzzles, 0 problems; timers 30 s (Basic/Standard) / 60 s (Complex/Expert)
+Lexicon             : 21,904 words; LDNOOBW + curated blocklist applied (0 flagged words remain)
+
+Upload key          : WordSurge-upload-key.jks, alias wordsurge-upload, RSA-4096, valid until 2054-01-24
+Upload key SHA-256  : 34:12:C9:89:A4:20:9F:A4:F9:54:4C:65:0D:47:62:02:ED:01:BE:07:B3:E1:2C:41:43:0A:BD:21:BE:B5:7C:23

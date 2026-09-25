@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Release signing is read from the environment so no secret ever lives in the repository.
+// See signing.env.example and docs/PLAY_STORE_RELEASE_GUIDE.md.
+def envKeystore = System.getenv('WORDSURGE_KEYSTORE')
+def envStorePassword = System.getenv('WORDSURGE_STORE_PASSWORD')
+def envKeyAlias = System.getenv('WORDSURGE_KEY_ALIAS')
+def envKeyPassword = System.getenv('WORDSURGE_KEY_PASSWORD')
+def signingReady = envKeystore && envStorePassword && envKeyAlias && envKeyPassword
+
+android {
+    namespace 'ai.arena.wordsurge'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'ai.arena.wordsurge'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '1.5.0'
+        // The game ships English content only; keep only English resources from the platform.
+        resourceConfigurations += ['en']
+    }
+
+    signingConfigs {
+        release {
+            if (signingReady) {
+                storeFile file(envKeystore)
+                storePassword envStorePassword
+                keyAlias envKeyAlias
+                keyPassword envKeyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            if (signingReady) signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    bundle {
+        // Single-language, single-density app: no need for on-demand splits.
+        language { enableSplit = false }
+        density { enableSplit = false }
+    }
+
+    lint {
+        abortOnError true
+        checkReleaseBuilds true
+    }
+}
+
+tasks.register('checkReleaseSigning') {
+    doLast {
+        if (!signingReady) {
+            throw new GradleException('Release signing is not configured. Export WORDSURGE_KEYSTORE, WORDSURGE_STORE_PASSWORD, WORDSURGE_KEY_ALIAS and WORDSURGE_KEY_PASSWORD (see signing.env.example).')
+        }
+    }
+}
+tasks.matching { it.name == 'bundleRelease' || it.name == 'assembleRelease' }.configureEach { dependsOn 'checkReleaseSigning' }

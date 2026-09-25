@@ -1,0 +1,168 @@
+# compiler: R8
+# compiler_version: 8.10.21
+# min_api: 26
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"2.2"}
+# pg_map_id: 7da0207
+# pg_map_hash: SHA-256 7da0207307c68a0416e95772743e09de0e79fb6b80872d4905e16c7d1b05e29d
+ai.arena.wordsurge.MainActivity -> ai.arena.wordsurge.MainActivity:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    android.webkit.WebView webView -> a
+    int SHORE_COLOR -> b
+    6:12:void <clinit>():41:41 -> <clinit>
+    0:3:void <init>():38:38 -> <init>
+    0:3:void handleBack():118:118 -> onBackPressed
+    0:3:void onBackPressed():130 -> onBackPressed
+    4:7:void handleBack():119:119 -> onBackPressed
+    4:7:void onBackPressed():130 -> onBackPressed
+    8:18:void handleBack():122:122 -> onBackPressed
+    8:18:void onBackPressed():130 -> onBackPressed
+    0:2:void onCreate(android.os.Bundle):48:48 -> onCreate
+    3:10:void configureSystemBars():90:90 -> onCreate
+    3:10:void onCreate(android.os.Bundle):49 -> onCreate
+    11:18:void configureSystemBars():92:92 -> onCreate
+    11:18:void onCreate(android.os.Bundle):49 -> onCreate
+    19:25:void configureSystemBars():94:94 -> onCreate
+    19:25:void onCreate(android.os.Bundle):49 -> onCreate
+    26:32:void configureSystemBars():95:95 -> onCreate
+    26:32:void onCreate(android.os.Bundle):49 -> onCreate
+    33:39:void onCreate(android.os.Bundle):51:51 -> onCreate
+    40:42:void onCreate(android.os.Bundle):52:52 -> onCreate
+    43:48:void onCreate(android.os.Bundle):53:53 -> onCreate
+    49:54:void onCreate(android.os.Bundle):54:54 -> onCreate
+    55:59:void onCreate(android.os.Bundle):55:55 -> onCreate
+    60:66:void onCreate(android.os.Bundle):57:57 -> onCreate
+    67:69:void onCreate(android.os.Bundle):58:58 -> onCreate
+    70:72:void onCreate(android.os.Bundle):59:59 -> onCreate
+    73:75:void onCreate(android.os.Bundle):60:60 -> onCreate
+    76:78:void onCreate(android.os.Bundle):61:61 -> onCreate
+    79:81:void onCreate(android.os.Bundle):62:62 -> onCreate
+    82:84:void onCreate(android.os.Bundle):63:63 -> onCreate
+    85:87:void onCreate(android.os.Bundle):64:64 -> onCreate
+    88:90:void onCreate(android.os.Bundle):65:65 -> onCreate
+    91:93:void onCreate(android.os.Bundle):66:66 -> onCreate
+    94:96:void onCreate(android.os.Bundle):67:67 -> onCreate
+    97:99:void onCreate(android.os.Bundle):68:68 -> onCreate
+    100:102:void onCreate(android.os.Bundle):69:69 -> onCreate
+    103:105:void onCreate(android.os.Bundle):70:70 -> onCreate
+    106:129:void onCreate(android.os.Bundle):71:71 -> onCreate
+    130:136:void onCreate(android.os.Bundle):73:73 -> onCreate
+    137:145:void onCreate(android.os.Bundle):74:74 -> onCreate
+    146:148:void onCreate(android.os.Bundle):76:76 -> onCreate
+    149:158:void onCreate(android.os.Bundle):77:77 -> onCreate
+    159:166:void onCreate(android.os.Bundle):78:78 -> onCreate
+    167:176:void applyEdgeToEdgeInsets():101:101 -> onCreate
+    167:176:void onCreate(android.os.Bundle):79 -> onCreate
+    177:185:void applyEdgeToEdgeInsets():106:106 -> onCreate
+    177:185:void onCreate(android.os.Bundle):79 -> onCreate
+    186:199:void registerBackHandler():111:111 -> onCreate
+    186:199:void onCreate(android.os.Bundle):80 -> onCreate
+    200:207:void onCreate(android.os.Bundle):83:83 -> onCreate
+    208:213:void onCreate(android.os.Bundle):85:85 -> onCreate
+    0:3:void onDestroy():153:153 -> onDestroy
+    4:8:void onDestroy():154:154 -> onDestroy
+    9:13:void onDestroy():155:155 -> onDestroy
+    14:19:void onDestroy():156:156 -> onDestroy
+    20:21:void onDestroy():157:157 -> onDestroy
+    22:25:void onDestroy():159:159 -> onDestroy
+    0:6:void onPause():141:141 -> onPause
+    7:10:void onPause():142:142 -> onPause
+    0:2:void onResume():147:147 -> onResume
+    3:10:void onResume():148:148 -> onResume
+    0:6:void onSaveInstanceState(android.os.Bundle):135:135 -> onSaveInstanceState
+    7:10:void onSaveInstanceState(android.os.Bundle):136:136 -> onSaveInstanceState
+ai.arena.wordsurge.MainActivity$$ExternalSyntheticApiModelOutline0 -> a.a:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    0:4:android.window.OnBackInvokedDispatcher a.MainActivity$$ExternalSyntheticApiModelOutline0.m(ai.arena.wordsurge.MainActivity):0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:4:void a.MainActivity$$ExternalSyntheticApiModelOutline0.m(android.window.OnBackInvokedDispatcher,a.MainActivity$$ExternalSyntheticLambda12):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Landroid/window/OnBackInvokedDispatcher;La/e;)V"}
+ai.arena.wordsurge.MainActivity$$ExternalSyntheticApiModelOutline10 -> a.b:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    0:4:int a.MainActivity$$ExternalSyntheticApiModelOutline10.m():0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:4:android.graphics.Insets a.MainActivity$$ExternalSyntheticApiModelOutline10.m(android.view.WindowInsets,int):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:2:android.view.WindowInsets a.MainActivity$$ExternalSyntheticApiModelOutline10.m():0:0 -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:4:int a.MainActivity$$ExternalSyntheticApiModelOutline10.m$1():0:0 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+ai.arena.wordsurge.MainActivity$$ExternalSyntheticApiModelOutline2 -> a.c:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    0:2:int a.MainActivity$$ExternalSyntheticApiModelOutline2.m(android.graphics.Insets):0:0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:4:void a.MainActivity$$ExternalSyntheticApiModelOutline2.m(android.view.Window):0:0 -> b
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:2:int a.MainActivity$$ExternalSyntheticApiModelOutline2.m$1(android.graphics.Insets):0:0 -> c
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:2:int a.MainActivity$$ExternalSyntheticApiModelOutline2.m$2(android.graphics.Insets):0:0 -> d
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:2:int a.MainActivity$$ExternalSyntheticApiModelOutline2.m$3(android.graphics.Insets):0:0 -> e
+      # {"id":"com.android.tools.r8.synthesized"}
+ai.arena.wordsurge.MainActivity$$ExternalSyntheticLambda11 -> a.d:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    ai.arena.wordsurge.MainActivity ai.arena.wordsurge.MainActivity$$InternalSyntheticLambda$1$6afc596c28cdf5729bd833998ea9e5f44497c8a5da4434e824528b946d4bad5f$0.f$0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:5:void a.MainActivity$$ExternalSyntheticLambda11.<init>(ai.arena.wordsurge.MainActivity):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    9:20:void ai.arena.wordsurge.MainActivity.lambda$handleBack$1(java.lang.String):124:124 -> onReceiveValue
+      # {"id":"com.android.tools.r8.residualsignature","signature":"(Ljava/lang/Object;)V"}
+ai.arena.wordsurge.MainActivity$$ExternalSyntheticLambda12 -> a.e:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    ai.arena.wordsurge.MainActivity ai.arena.wordsurge.MainActivity$$InternalSyntheticLambda$2$c1f4e93c97b693a7e5ce515a52ceba9627cb02a56c215b66f9f06ccda2bc3358$1.f$0 -> a
+      # {"id":"com.android.tools.r8.synthesized"}
+    0:5:void a.MainActivity$$ExternalSyntheticLambda12.<init>(ai.arena.wordsurge.MainActivity):0:0 -> <init>
+      # {"id":"com.android.tools.r8.synthesized"}
+    4:7:void ai.arena.wordsurge.MainActivity.handleBack():118:118 -> onBackInvoked
+    8:11:void ai.arena.wordsurge.MainActivity.handleBack():119:119 -> onBackInvoked
+    12:22:void ai.arena.wordsurge.MainActivity.handleBack():122:122 -> onBackInvoked
+ai.arena.wordsurge.MainActivity$$ExternalSyntheticLambda13 -> a.f:
+# {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
+# {"id":"com.android.tools.r8.synthesized"}
+    2:14:android.view.WindowInsets ai.arena.wordsurge.MainActivity.lambda$applyEdgeToEdgeInsets$0(android.view.View,android.view.WindowInsets):102:102 -> onApplyWindowInsets
+    15:33:android.view.WindowInsets ai.arena.wordsurge.MainActivity.lambda$applyEdgeToEdgeInsets$0(android.view.View,android.view.WindowInsets):103:103 -> onApplyWindowInsets
+    34:38:android.view.WindowInsets ai.arena.wordsurge.MainActivity.lambda$applyEdgeToEdgeInsets$0(android.view.View,android.view.WindowInsets):104:104 -> onApplyWindowInsets
+ai.arena.wordsurge.MainActivity$LocalContentClient -> a.g:
+# {"id":"sourceFile","fileName":"MainActivity.java"}
+    ai.arena.wordsurge.MainActivity this$0 -> a
+    0:5:void <init>(ai.arena.wordsurge.MainActivity):163:163 -> <init>
+    0:5:java.lang.String mimeType(java.lang.String):213:213 -> a
+    6:16:java.lang.String mimeType(java.lang.String):214:214 -> a
+    17:27:java.lang.String mimeType(java.lang.String):215:215 -> a
+    28:38:java.lang.String mimeType(java.lang.String):216:216 -> a
+    39:55:java.lang.String mimeType(java.lang.String):217:217 -> a
+    56:66:java.lang.String mimeType(java.lang.String):218:218 -> a
+    67:83:java.lang.String mimeType(java.lang.String):219:219 -> a
+    84:94:java.lang.String mimeType(java.lang.String):220:220 -> a
+    95:97:java.lang.String mimeType(java.lang.String):221:221 -> a
+    98:100:java.lang.String mimeType(java.lang.String):219:219 -> a
+    101:103:java.lang.String mimeType(java.lang.String):217:217 -> a
+    0:12:android.webkit.WebResourceResponse notFound():208:208 -> b
+    13:31:android.webkit.WebResourceResponse notFound():209:209 -> b
+    0:5:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):186:186 -> shouldInterceptRequest
+    6:22:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):187:187 -> shouldInterceptRequest
+    23:28:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):189:189 -> shouldInterceptRequest
+    29:38:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):190:190 -> shouldInterceptRequest
+    39:51:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):191:191 -> shouldInterceptRequest
+    52:65:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):194:194 -> shouldInterceptRequest
+    66:70:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):195:195 -> shouldInterceptRequest
+    71:77:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):196:196 -> shouldInterceptRequest
+    78:84:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):197:197 -> shouldInterceptRequest
+    85:91:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):199:199 -> shouldInterceptRequest
+    92:98:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):200:200 -> shouldInterceptRequest
+    99:114:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):201:201 -> shouldInterceptRequest
+    115:119:android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,android.webkit.WebResourceRequest):203:203 -> shouldInterceptRequest
+    0:7:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):166:166 -> shouldOverrideUrlLoading
+    8:21:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):167:167 -> shouldOverrideUrlLoading
+    22:25:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):168:168 -> shouldOverrideUrlLoading
+    26:57:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):169:169 -> shouldOverrideUrlLoading
+    58:66:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):171:171 -> shouldOverrideUrlLoading
+    67:72:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):173:173 -> shouldOverrideUrlLoading
+    73:94:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):175:175 -> shouldOverrideUrlLoading
+    95:104:boolean shouldOverrideUrlLoading(android.webkit.WebView,android.webkit.WebResourceRequest):176:176 -> shouldOverrideUrlLoading

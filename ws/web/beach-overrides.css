@@ -1,0 +1,120 @@
+/* Surge Bay skin — the WordSurge brand look: peacock teal sea, coral surge wave, gold light. Original artwork. */
+.app-shell.theme-beach{
+  background-color:#0f3f4b;
+  background-image:linear-gradient(180deg,rgba(8,39,49,.22),rgba(15,63,75,.06) 46%,rgba(8,36,44,.3)),url("assets/surge-wave.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.app-shell.theme-beach::before{background:transparent}
+.app-shell.theme-beach .scene-art::before,.app-shell.theme-beach .scene-art::after{opacity:0}
+.app-shell.theme-beach .floating-leaf{width:5px;height:5px;border-radius:50%;background:#ffe2b3;box-shadow:0 0 10px #ffc44f;opacity:.85}
+.app-shell.theme-beach .glass-card{background:rgba(255,250,243,.8);border-color:rgba(255,255,255,.55)}
+.app-shell.theme-beach .journey-card{background:linear-gradient(135deg,rgba(255,251,244,.92),rgba(255,236,220,.74))}
+.app-shell.theme-beach .journey-card::before{background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.82),rgba(255,170,130,.7))}
+.app-shell.theme-beach .quick-card,.app-shell.theme-beach .weekly-strip{background:rgba(255,249,239,.84)}
+.app-shell.theme-beach .home-light .section-heading h2,.app-shell.theme-beach .home-light .section-heading button,.app-shell.theme-beach .home-light .section-heading small{color:#fff;text-shadow:0 2px 8px rgba(6,26,32,.6)}
+.app-shell.theme-beach .greeting{text-shadow:0 2px 10px rgba(6,26,32,.55)}
+.app-shell.theme-beach .inner-screen{background:linear-gradient(180deg,rgba(8,33,39,.06),rgba(255,247,236,.74) 35%,rgba(250,247,240,.95) 76%)}
+
+.app-shell.theme-beach .game-screen{
+  position:relative;
+  background-color:#0f3f4b;
+  background-image:linear-gradient(180deg,rgba(7,30,38,.34) 0%,rgba(15,63,75,.04) 32%,rgba(15,50,60,.08) 63%,rgba(5,26,32,.38) 100%),url("assets/surge-wave.jpg");
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+}
+.app-shell.theme-beach .game-topbar{min-height:56px;text-shadow:0 2px 7px rgba(6,20,22,.55)}
+.app-shell.theme-beach .game-title strong{font-size:19px;letter-spacing:.8px;text-transform:uppercase}
+.app-shell.theme-beach .game-title span{font-size:9px;letter-spacing:1.8px;color:rgba(255,255,255,.82)}
+.app-shell.theme-beach .icon-button{border-radius:50%;background:rgba(7,38,47,.6);border:2px solid rgba(255,255,255,.82);box-shadow:0 5px 13px rgba(7,25,28,.24)}
+.app-shell.theme-beach .game-topbar .currency-pill{height:44px;border-radius:22px;background:rgba(9,40,49,.66);border-color:rgba(255,255,255,.2);box-shadow:0 5px 16px rgba(8,25,27,.2)}
+.app-shell.theme-beach .game-topbar .currency-pill .icon{color:#ffc44f;fill:#ffb02e;stroke:#fff0c2}
+.app-shell.theme-beach .game-progress{height:3px;background:rgba(255,255,255,.19);box-shadow:0 1px 5px rgba(0,0,0,.16)}
+.app-shell.theme-beach .game-progress span{background:linear-gradient(90deg,#ffc44f,#ff8a5c,#ff6a4d)}
+
+.app-shell.theme-beach .puzzle-stage{padding:14px 0 8px}
+.app-shell.theme-beach .crossword-grid{gap:5px;filter:drop-shadow(0 9px 13px rgba(31,16,22,.28))}
+.app-shell.theme-beach .cross-cell{
+  border-radius:11px;
+  background:linear-gradient(145deg,rgba(9,44,54,.68),rgba(12,58,70,.5));
+  border:1px solid rgba(255,255,255,.22);
+  box-shadow:inset 0 1px rgba(255,255,255,.14),0 3px 0 rgba(6,30,38,.3);
+  backdrop-filter:blur(4px);
+  font-size:clamp(20px,8vw,36px);
+}
+.app-shell.theme-beach .cross-cell.visible{
+  color:#fff;
+  background:linear-gradient(145deg,#ff8a5c,#e2553f 72%);
+  border-color:rgba(255,214,190,.42);
+  box-shadow:inset 0 1px rgba(255,255,255,.3),0 4px 0 rgba(150,50,30,.36),0 9px 18px rgba(120,40,20,.2);
+  text-shadow:0 2px 2px rgba(120,40,20,.28);
+}
+.app-shell.theme-beach .cross-cell.hinted{color:#fff7d6;background:linear-gradient(145deg,#ffb45c,#e8843a)}
+.app-shell.theme-beach .cross-cell.spark{animation:shoreCellGlow .7s ease}
+@keyframes shoreCellGlow{50%{box-shadow:0 0 0 5px rgba(255,196,79,.3),0 0 28px rgba(255,196,79,.78);transform:scale(1.08)}}
+
+.app-shell.theme-beach .play-zone{gap:8px}
+.app-shell.theme-beach .word-preview{background:rgba(9,40,49,.72);border:1px solid rgba(255,255,255,.18);box-shadow:0 7px 18px rgba(15,27,27,.2);text-shadow:0 2px 5px rgba(0,0,0,.25)}
+.app-shell.theme-beach .word-preview.correct{background:linear-gradient(135deg,#ff8a5c,#e2553f)}
+.app-shell.theme-beach .word-preview.wrong{background:rgba(160,52,48,.88)}
+.app-shell.theme-beach .letter-wheel{
+  width:236px;
+  height:236px;
+  background:radial-gradient(circle at 46% 38%,rgba(20,72,86,.86),rgba(8,30,38,.9) 72%);
+  border:2px solid rgba(255,255,255,.18);
+  box-shadow:inset 0 1px 3px rgba(255,255,255,.15),0 18px 35px rgba(9,23,25,.3);
+  backdrop-filter:blur(7px);
+}
+.app-shell.theme-beach .letter-wheel::after{inset:43%;background:rgba(255,255,255,.025);border-color:rgba(255,255,255,.07)}
+.app-shell.theme-beach .letter-button{
+  width:56px;
+  height:56px;
+  margin:-28px 0 0 -28px;
+  background:transparent;
+  color:#fff;
+  border:0;
+  box-shadow:none;
+  font-size:30px;
+  text-shadow:0 3px 6px rgba(0,0,0,.42);
+}
+.app-shell.theme-beach .letter-button.selected{
+  color:#fff;
+  background:linear-gradient(145deg,#ff8a5c,#e2553f);
+  box-shadow:0 0 0 5px rgba(255,196,79,.2),0 8px 22px rgba(120,40,20,.35);
+  text-shadow:none;
+}
+.app-shell.theme-beach .swipe-path{stroke:#ffc44f;stroke-width:5;filter:drop-shadow(0 0 5px rgba(255,150,90,.85))}
+.app-shell.theme-beach .shuffle-center{
+  /* Lower-left of the wheel: clear of the left-most letter on 7–8 letter wheels. */
+  left:-3%;
+  top:90%;
+  width:52px;
+  height:52px;
+  border:2px solid rgba(255,255,255,.86);
+  background:rgba(9,40,49,.66);
+  box-shadow:0 8px 20px rgba(5,19,21,.3);
+}
+.app-shell.theme-beach .shuffle-center::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px solid rgba(255,255,255,.16)}
+.app-shell.theme-beach .hint-dock{max-width:350px;gap:7px}
+.app-shell.theme-beach .hint-button{
+  min-height:47px;
+  color:#fff;
+  background:rgba(9,40,49,.6);
+  border:1px solid rgba(255,255,255,.23);
+  box-shadow:0 7px 17px rgba(6,22,24,.22);
+  backdrop-filter:blur(8px);
+}
+.app-shell.theme-beach .hint-button .icon{color:#ffc44f}
+.app-shell.theme-beach .hint-count{background:#e2553f;color:#fff;border-radius:50%}
+
+.app-shell.theme-beach.dark .game-screen{background-image:linear-gradient(180deg,rgba(3,18,24,.5),rgba(8,36,44,.24) 48%,rgba(3,18,24,.56)),url("assets/surge-wave.jpg")}
+.app-shell.theme-beach.dark .cross-cell{background:linear-gradient(145deg,rgba(8,34,42,.8),rgba(6,24,30,.74))}
+.app-shell.theme-beach.dark .cross-cell.visible{background:linear-gradient(145deg,#f07a4e,#c74a35)}
+
+@media (max-height:720px){
+  .app-shell.theme-beach .letter-wheel{width:196px;height:196px}
+  .app-shell.theme-beach .letter-button{width:48px;height:48px;margin:-24px 0 0 -24px;font-size:25px}
+  .app-shell.theme-beach .shuffle-center{width:46px;height:46px;left:-4%;top:90%}
+  .app-shell.theme-beach .puzzle-stage{padding:7px 0 3px}
+}

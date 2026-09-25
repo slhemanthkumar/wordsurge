@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- AGP 8.10 pairs with Gradle 8.11.1; newer Gradle is optional, not required. -->
+    <issue id="AndroidGradlePluginVersion" severity="ignore" />
+    <!-- Adaptive icons need the v26 resources next to the legacy density PNGs (minSdk 26). -->
+    <issue id="ObsoleteSdkInt">
+        <ignore path="src/main/res/mipmap-anydpi-v26" />
+    </issue>
+    <!-- Android 13+ receives the dedicated v33 variant that adds the monochrome layer. -->
+    <issue id="MonochromeLauncherIcon">
+        <ignore path="src/main/res/mipmap-anydpi-v26" />
+    </issue>
+</lint>

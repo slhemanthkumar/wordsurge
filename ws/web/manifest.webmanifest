@@ -1,0 +1,17 @@
+{
+  "name": "WordSurge: Timed Word Puzzle",
+  "short_name": "WordSurge",
+  "description": "Connect letters through timed puzzles, challenge routes, and rewarding milestones.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0f3f4b",
+  "theme_color": "#0f3f4b",
+  "lang": "en",
+  "categories": ["games", "education", "entertainment"],
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
